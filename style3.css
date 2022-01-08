@@ -1,0 +1,163 @@
+@font-face {
+    font-family: arcadeKarmatic;
+    src: url(arcade_karmatic.ttf);
+}
+
+@font-face {
+    font-family: arcadeN;
+    src: url(arcade_n.TTF);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(214, 198, 175);
+}
+
+#top_bar{
+    width: 100%;
+    height: 200px;
+    background-image: url("background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#top_bar_color{
+    background-color: rgb(0, 26, 255, 0.85);
+    width: 100%;
+    height: 200px;
+}
+
+#styleee{
+    text-align: center;
+    font-size: 150px;
+    font-family: arcadeKarmatic;
+}
+
+#menu_bar{  
+    background-color:rgb(133, 95, 40);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top: black solid 4px;
+    border-bottom: black solid 4px;
+}
+
+#menu_bar_left{
+    width: 60%;
+    align-items: left;
+    text-align: left;
+}
+
+#menu_bar_right{
+    width: 40%;
+    align-items: right;
+    text-align: right;
+}
+
+#menu_bar_left, #menu_bar_right{
+    height: 48px;
+}
+
+#menu_bar a{
+    background-color: rgba(88, 88, 88, 0.7);
+    font-family: arcadeN;   
+    padding: 13px;
+    color: white;
+    border: black solid;
+    border-width: 3px 4px;
+    text-decoration: none;
+    margin: 0px;
+    height: 48px;
+}
+nav li{
+    display: inline;   
+}
+
+ul{
+    padding: 0px;
+    margin: 14px 0px;
+}
+
+#main{
+    width: 100%;
+    float: left;
+    justify-content: space-;
+}
+
+footer{
+    float: left;
+    text-align: center;
+    background-color: rgb(133, 95, 40);
+    width: 100%;
+    font-family: arcadeN;
+    border-top: black solid 2px;
+}
+#product{
+    background-color: rgb(194, 171, 136);
+    border: solid black 4px;
+    width: 30.5%;
+    text-align: center;
+    float: left;
+    margin: 1%;
+    transition: all 800ms;
+    transition-timing-function: ease-in-out;
+}
+
+#product img{
+    width: 90%;
+    margin: 10px;
+}
+
+hgroup{
+    font-family: arcadeN;
+    font-size: 15px;
+}
+
+#product:hover{
+    background-color: rgb(182, 145, 91);
+    transition: all 300ms;
+    transition-timing-function: ease-in;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#menu_bar a:hover{
+    background-color: rgba(201, 201, 201, 0.7);
+    color: black;
+    transition: all 300ms;
+    transition-timing-function: ease-in;
+}
+
+@media only screen and (max-width: 1000px) {
+    #product{
+        width: 80%;
+        margin: 3% 10%;
+        transition: all 800ms;
+        transition-timing-function: ease-in-out;
+    }
+    #top_bar{
+        display: none;
+        transition: all 800ms;
+        transition-timing-function: ease-in-out;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    #menu_bar_left{
+        width: auto;
+        align-items: left;
+        text-align: left;
+    }
+    
+    #menu_bar_right{
+        width: auto;
+        align-items: left;
+        text-align: left;
+    }
+    
+}

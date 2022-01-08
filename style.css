@@ -1,0 +1,212 @@
+@font-face {
+    font-family: arcadeKarmatic;
+    src: url(arcade_karmatic.ttf);
+  }
+
+@font-face {
+    font-family: arcadeN;
+    src: url(arcade_n.TTF);
+  }
+
+body{
+    background-image: url("background.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+#color_layer{
+    background-color: rgb(0, 26, 255, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#contact a{
+    margin: 10px;
+    background-color: rgba(88, 88, 88, 0.7);
+    font-family: arcadeN;   
+    padding: 13px;
+    color: white;
+    border: black solid 4px;
+    text-decoration: none;
+    float: right;
+    transition: all 800ms;
+    transition-timing-function: ease-in-out;
+}
+
+#menu{
+    background-color: rgba(88, 88, 88, 0.7);
+    font-family: arcadeN;   
+    padding: 13px;
+    color: white;
+    border: black solid 4px;
+    float: left;
+    margin: 10px;
+    transition: all 800ms;
+    transition-timing-function: ease-in-out;
+}
+
+#top_bar{
+    height: 10%;
+    width: 100%;
+}
+
+#social_media{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li img{
+    width: 50px;
+}
+
+ul li{
+    display: inline;
+}
+
+#social_media{
+    text-align: center;
+}
+
+#text_box{
+    border: black solid 6px;
+    background-color: rgba(61, 59, 56, 0.815);
+    font-family: arcadeKarmatic;
+    font-size: 160%;
+    width: 60%;
+    text-align: center;
+    margin: 10% 20% 5% 20%;
+    height: 40%;
+    transition: all 800ms;
+    transition-timing-function: ease-in-out;
+}
+
+#collection{
+    margin: 5% 40%;
+    text-align: center;
+}
+
+#collection a{
+    width: 10%;
+    background-color: rgba(88, 88, 88, 0.7);
+    font-family: arcadeN;   
+    padding: 13px;
+    color: white;
+    border: black solid 4px;
+    text-decoration: none;
+    transition: all 800ms;
+    transition-timing-function: ease-in-out;
+}
+
+#menu > ol:hover  *{
+    display: block;
+    animation: fadeIn 3s;
+
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+#menu *{
+     list-style-type: none;
+}
+#menu > ol >li >ul{
+    display: none;
+}
+
+ol, li{
+    margin: 0px;
+    padding: 0px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    color: rgb(245, 219, 171);
+    transition: all 300ms;
+    transition-timing-function: ease-in;
+}
+
+#contact a:hover, #collection a:hover{
+    background-color: rgba(201, 201, 201, 0.7);
+    color: black;
+    transition: all 300ms;
+    transition-timing-function: ease-in;
+}
+
+#social_media ul{
+    padding: 0;
+}
+
+@media only screen and (max-width: 1350px) {
+    body{
+        background-color: rgb(214, 198, 175);
+        background-image: none;
+    }
+    #color_layer{
+        background-color: rgba(214, 198, 175, 0);
+    }
+    #top_bar{
+        background-color: rgb(133, 95, 40);
+        border-bottom: black solid 5px;
+    }
+    #menu{
+        background-color: rgb(88, 88, 88);
+    }
+    #contact{
+        background-color: rgb(88, 88, 88);
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #text_box{
+        font-size: 150%;
+        width: 80%;
+        margin: 10% 10% 5% 10%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    #text_box{
+        font-size: 130%;
+        transition: all 800ms;
+        transition-timing-function: ease-in-out;
+        width: 90%;
+        margin: 10% 5% 5% 5%;
+    }
+    #menu, #contact, #collection{
+        font-size: 80%;
+        transition: all 800ms;
+        transition-timing-function: ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #text_box{
+        font-size: 100%;
+        height: 30%;
+        transition: all 800ms;
+        transition-timing-function: ease-in-out;
+    }
+    #menu, #contact, #collection{
+        font-size: 60%;
+        transition: all 800ms;
+        transition-timing-function: ease-in-out;
+    }
+
+}

@@ -1,0 +1,210 @@
+@font-face {
+    font-family: arcadeKarmatic;
+    src: url(arcade_karmatic.ttf);
+}
+
+@font-face {
+    font-family: arcadeN;
+    src: url(arcade_n.TTF);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(214, 198, 175);
+}
+
+#top_bar{
+    width: 100%;
+    height: 200px;
+    background-image: url("background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#top_bar_color{
+    background-color: rgb(0, 26, 255, 0.85);
+    width: 100%;
+    height: 200px;
+}
+
+#styleee{
+    text-align: center;
+    font-size: 150px;
+    font-family: arcadeKarmatic;
+}
+
+#menu_bar{  
+    background-color:rgb(133, 95, 40);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top: black solid 4px;
+    border-bottom: black solid 4px;
+}
+
+#menu_bar_left{
+    text-align: left;
+    width: 60%;
+}
+
+#menu_bar_right{
+    text-align: right;
+    width: 40%;
+}
+
+#menu_bar_left, #menu_bar_right{
+    height: 48px;
+}
+
+#menu_bar a{
+    background-color: rgba(88, 88, 88, 0.7);
+    font-family: arcadeN;   
+    padding: 13px;
+    color: white;
+    border: black solid;
+    border-width: 3px 4px;
+    text-decoration: none;
+    margin: 0px;
+    height: 48px;
+    transition: all 800ms;
+    transition-timing-function: ease-in-out;
+}
+nav li{
+    display: inline;   
+}
+
+ul{
+    padding: 0px;
+    margin: 14px 0px;
+}
+
+#contact_label{
+    font-family: arcadeN;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form{
+    background-color: rgb(194, 153, 96);
+    border: black solid 2px;
+    font-family: arcadeN;
+    margin: 50px 20%;
+    width: 60%;
+    height: 550px;
+    text-align: center;
+    transition: all 800ms;
+    transition-timing-function: ease-in-out;
+}
+
+input{
+    height: 30px;
+}
+
+#form_line{
+    margin: 5px;
+    display: flex;
+}
+
+textarea{
+    height: 200px;
+}
+
+textarea, input{
+    width: 40%;
+    font-family: arcadeN;
+}
+
+footer{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    text-align: center;
+    background-color: rgb(133, 95, 40);
+    font-family: arcadeN;
+    border-top: black solid 2px;
+}
+
+input[type="submit"]{
+    border: black solid 3px;
+    background-color: rgba(88, 88, 88, 0.7);
+    color: white;
+    text-align: center;
+}
+
+input[type="submit"]:hover,#menu_bar a:hover{
+    background-color: rgba(201, 201, 201, 0.7);
+    color: black;
+    transition: all 300ms;
+    transition-timing-function: ease-in;
+}
+
+#main{
+    width: 100%;
+}
+
+label{
+    float: left;
+    width: 38%;
+}
+
+input, textarea{
+    float: right;
+    width: 60%;
+}
+
+#submit > input{
+    text-align: center;
+    float: none;
+}
+
+#contact_header{
+    text-align: center;
+    font-family: arcadeN;
+}
+
+textarea{
+    resize: horizontal;
+}
+
+@media only screen and (max-width: 1000px) {
+    #top_bar{
+        display: none;  
+    }
+
+    form{
+        margin: 50px 10%;
+        width: 80%;
+        transition: all 800ms;
+        transition-timing-function: ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #menu_bar_left{
+        width: auto;
+    }
+    
+    #menu_bar_right{
+        width: auto;
+        text-align: left;
+    }
+
+    form{
+        margin: 50px 5%;
+        width: 90%;
+        transition: all 800ms;
+        transition-timing-function: ease-in-out;
+    }
+    
+}
+
+@media only screen and (max-width: 550px) {
+    #menu_bar a{
+        font-size: 75%;
+        transition: all 800ms;
+        transition-timing-function: ease-in-out;
+    }
+
+}
